@@ -3,13 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ultraomeaga</title>
-<style>body{font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;background:#0f172a;color:#e2e8f0}main{text-align:center}h1{font-size:2.5rem;margin:0}p{color:#94a3b8}</style>
+<title>Hiddenmolty — A private AI assistant on Telegram</title>
+<meta name="description" content="Hiddenmolty is a Telegram AI assistant powered by open-source language models. Private by design, fluent in Persian and English, with memory and tools. Currently in private testing.">
+<style>
+  :root { color-scheme: light; --ink: #1a1d21; --muted: #5b6470; --line: #e5e8ec; --accent: #2563eb; --bg: #ffffff; --soft: #f6f8fa; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+  header { border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+  .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: -0.01em; }
+  .brand span { color: var(--accent); }
+  nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  nav a:hover { color: var(--ink); }
+  .hero { padding: 56px 0 40px; }
+  .hero h1 { font-size: 2.4rem; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 16px; }
+  .tagline { font-size: 1.2rem; color: var(--muted); margin: 0 0 20px; }
+  .badge { display: inline-block; font-size: 0.8rem; font-weight: 600; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 3px 12px; margin-bottom: 18px; }
+  .cta { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 12px 22px; border-radius: 8px; }
+  .cta:hover { background: #1d4ed8; }
+  section { padding: 32px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.35rem; letter-spacing: -0.01em; margin: 0 0 12px; }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  li strong { font-weight: 600; }
+  .grid { display: grid; gap: 16px; }
+  @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .card { background: var(--soft); border-radius: 10px; padding: 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+</style>
 </head>
 <body>
-<main>
-<h1>ultraomeaga</h1>
-<p>Coming soon.</p>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Hidden<span>molty</span></div>
+      <a href="mailto:hello@ultraomeaga.loc.cc">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <span class="badge">Currently in private testing</span>
+    <h1>A private AI assistant on Telegram</h1>
+    <p class="tagline">Hiddenmolty brings a powerful open-source language model to your pocket. Ask questions, draft and edit text, brainstorm ideas, translate &mdash; in Persian and English.</p>
+    <p>No sign-up beyond Telegram. No ads. No tracking.</p>
+    <p><a class="cta" href="https://t.me/Hiddenmoltybot">Hiddenmolty on Telegram</a></p>
+  </div>
+
+  <section>
+    <h2>What it is</h2>
+    <p>Hiddenmolty is a Telegram bot powered by an open-source large language model (Qwen3.8-27B). It runs on cloud GPUs and answers right inside your Telegram chats, so the AI you already talk to every day is simply there when you need it.</p>
+    <p>It is built for people who want a capable assistant without handing their conversations to an advertising company. Your chats stay between you and the model.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Private by design</h3>
+        <p>No ads, no data selling, no third-party analytics. Conversations are used only to answer you.</p>
+      </div>
+      <div class="card">
+        <h3>Persian &amp; English</h3>
+        <p>Fluent in both languages, with natural Persian replies &mdash; not translated English.</p>
+      </div>
+      <div class="card">
+        <h3>Memory</h3>
+        <p>It remembers the facts and preferences you choose to share, across conversations.</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>It can read and write files and run commands in its own workspace to get work done, not just chat.</p>
+      </div>
+      <div class="card">
+        <h3>Open models</h3>
+        <p>Built on open weights (Apache 2.0), so the model itself can be inspected, audited and self-hosted.</p>
+      </div>
+      <div class="card">
+        <h3>Adjustable effort</h3>
+        <p>Quick answers when you want speed, deeper reasoning with self-checks when the question matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol>
+      <li>Open Telegram and start a chat with <strong>@Hiddenmoltybot</strong>.</li>
+      <li>Ask anything, in Persian or English.</li>
+      <li>Use <strong>/remember</strong> to save a fact, or just keep chatting &mdash; it picks up the context.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p>Hiddenmolty is an independent solo project. It is built on open-source software, runs on cloud infrastructure, and is funded by its developer &mdash; no venture capital, no ads, no data selling.</p>
+    <p>The project is under active development. Access is currently limited to private testing while the assistant is being refined.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions, feedback or access requests: <a href="mailto:hello@ultraomeaga.loc.cc">hello@ultraomeaga.loc.cc</a></p>
+  </section>
 </main>
+<footer>
+  <div class="wrap">&copy; 2026 Hiddenmolty</div>
+</footer>
 </body>
 </html>
